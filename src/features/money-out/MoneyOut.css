@@ -1,0 +1,326 @@
+.money-out-page .money-in-page-header{
+  margin-bottom:21px
+}
+.money-out-expense-summary{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  margin:10px 0 18px;
+  padding:10px 12px;
+  border:1px solid #e7eee9;
+  border-radius:9px;
+  background:#f8fbf9;
+  color:#718078;
+  font-size:9px;
+  line-height:1.5
+}
+.money-out-expense-summary svg{
+  flex:none;
+  margin-top:1px;
+  color:#398064
+}
+.money-out-expense-summary strong{
+  color:#355344
+}
+.money-out-page .money-in-list-heading p{
+  max-width:540px
+}
+.money-out-page .money-out-row{
+  grid-template-columns:minmax(125px,1.1fr) minmax(130px,1fr) minmax(110px,.9fr) minmax(115px,.9fr) minmax(115px,.9fr) 110px
+}
+.money-out-page .money-in-amount-source small{
+  max-width:210px;
+  color:#859189;
+  font-size:9px;
+  line-height:1.35
+}
+.money-out-page .money-in-classification small{
+  display:block;
+  margin-top:4px;
+  color:#7e8b84;
+  font-size:8px
+}
+.money-out-page .money-in-action{
+  white-space:nowrap
+}
+.money-out-dialog{
+  max-height:min(90vh,780px);
+  overflow-y:auto
+}
+.money-out-dialog-eyebrow{
+  margin:23px 0 0;
+  color:#6e897b;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.12em
+}
+.money-out-dialog .money-in-dialog-amount{
+  margin-top:4px
+}
+.money-out-dialog .sale-confirmation-note{
+  margin:13px 0;
+  padding:10px 12px;
+  border-radius:9px;
+  background:#edf7f0;
+  color:#3d7058;
+  font-size:10px;
+  line-height:1.5
+}
+.expense-unverified-label{
+  color:#9b7a3d;
+  font-size:9px;
+  font-weight:500
+}
+.expense-evidence-note{
+  margin:13px 0;
+  padding:10px;
+  border-radius:8px;
+  background:#f3f7f4;
+  color:#63736a;
+  font-size:9px;
+  line-height:1.5
+}
+.money-out-actions{
+  display:flex;
+  flex-direction:column;
+  gap:8px
+}
+.money-out-actions .dialog-close-button{
+  width:100%
+}
+.expense-choice-panel{
+  margin:13px 0 5px;
+  padding:13px;
+  border:1px solid #e5ece7;
+  border-radius:11px;
+  background:#fbfdfb
+}
+.expense-choice-heading{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:10px
+}
+.expense-choice-heading h3,.expense-confirm-panel h3{
+  margin:0 0 5px;
+  color:#1b382c;
+  font-size:13px
+}
+.expense-choice-heading p{
+  margin:0;
+  color:#7a8981;
+  font-size:9px;
+  line-height:1.45
+}
+.expense-choice-heading>button{
+  flex:none;
+  border:0;
+  background:none;
+  color:#587466;
+  font-size:9px;
+  font-weight:700;
+  cursor:pointer
+}
+.expense-choice{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:3px 9px;
+  align-items:center;
+  width:100%;
+  margin-top:6px;
+  padding:10px;
+  border:1px solid #e8eeea;
+  border-radius:8px;
+  background:white;
+  text-align:left;
+  cursor:pointer
+}
+.expense-choice:hover,.expense-category-option:hover{
+  border-color:#b6d9c3;
+  background:#f6fbf7
+}
+.expense-choice strong{
+  color:#294a39;
+  font-size:10px
+}
+.expense-choice span{
+  grid-column:1;
+  color:#829087;
+  font-size:8px
+}
+.expense-choice svg{
+  grid-column:2;
+  grid-row:1/3;
+  color:#7d9186
+}
+.expense-category-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px
+}
+.expense-category-option{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:7px;
+  min-height:38px;
+  padding:8px 9px;
+  border:1px solid #e8eeea;
+  border-radius:8px;
+  background:white;
+  color:#385345;
+  font-size:9px;
+  text-align:left;
+  cursor:pointer
+}
+.expense-category-option svg{
+  flex:none;
+  color:#7d9186
+}
+.expense-confirm-panel{
+  margin:13px 0 5px;
+  padding:14px;
+  border:1px solid #b9ddc7;
+  border-radius:10px;
+  background:#f2faf5
+}
+.expense-confirm-kicker{
+  display:block;
+  margin-bottom:6px;
+  color:#54846b;
+  font-size:8px;
+  font-weight:800;
+  letter-spacing:.11em
+}
+.expense-confirm-panel p{
+  margin:6px 0;
+  color:#586c60;
+  font-size:9px;
+  line-height:1.5
+}
+.expense-confirm-panel .expense-confirm-description{
+  color:#344f40;
+  font-weight:700
+}
+.expense-confirm-panel code{
+  font-size:8px;
+  overflow-wrap:anywhere
+}
+.expense-confirm-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:8px;
+  margin-top:12px
+}
+.expense-confirm-actions .dialog-close-button{
+  width:auto;
+  min-width:125px;
+  padding-inline:13px
+}
+.expense-confirm-actions .dialog-secondary-button{
+  width:auto;
+  padding-inline:13px
+}
+@media(max-width:800px){
+  .money-out-page .money-out-columns{
+  display:none
+}
+.money-out-page .money-out-row{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:8px 12px;
+  padding:12px
+}
+.money-out-page .money-out-row>span{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  text-align:right
+}
+.money-out-page .money-out-row>span::before{
+  content:attr(data-label);
+  color:#8a9690;
+  font-size:8px;
+  text-align:left
+}
+.money-out-page .money-in-amount-source{
+  grid-column:1/-1;
+  display:flex;
+  align-items:flex-start;
+  text-align:left!important
+}
+.money-out-page .money-in-amount-source::before{
+  display:none
+}
+.money-out-page .money-in-amount-source strong{
+  font-size:13px
+}
+.money-out-page .money-in-amount-source>span{
+  font-size:10px
+}
+.money-out-page .money-in-amount-source small{
+  display:none
+}
+.money-out-page .money-in-date,.money-out-page .money-in-reference,.money-out-page .money-in-classification,.money-out-page .money-in-status{
+  grid-column:1/-1
+}
+.money-out-page .money-in-action{
+  grid-column:1/-1;
+  justify-content:flex-end!important;
+  color:#176548;
+  font-size:9px
+}
+.money-out-page .money-in-row .money-in-classification small{
+  margin:0 0 0 auto
+}
+.money-out-page .money-in-search{
+  max-width:100%
+}
+
+}
+@media(max-width:500px){
+  .money-out-page .money-in-page-header{
+  align-items:flex-start
+}
+.money-out-page .money-in-page-header>.status-badge{
+  font-size:7px;
+  padding:5px 6px;
+  white-space:nowrap
+}
+.money-out-page .money-in-summary-grid{
+  grid-template-columns:1fr 1fr
+}
+.money-out-page .money-in-reconciliation{
+  flex-wrap:wrap;
+  gap:6px
+}
+.money-out-page .reconciliation-equation{
+  width:100%;
+  margin-left:21px
+}
+.money-out-page .money-in-toolbar{
+  align-items:stretch
+}
+.money-out-page .money-in-filters{
+  overflow-x:auto;
+  flex-wrap:nowrap;
+  padding-bottom:2px
+}
+.money-out-page .money-in-filter{
+  flex:none
+}
+.money-out-dialog{
+  width:calc(100% - 20px);
+  max-height:94vh;
+  padding:16px
+}
+.expense-category-grid{
+  grid-template-columns:1fr
+}
+.expense-confirm-actions .dialog-close-button{
+  min-width:112px
+}
+
+}
+
